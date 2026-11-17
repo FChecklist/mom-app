@@ -1,0 +1,30 @@
+# Cloudflare Pages project config (free tier). Deploy only when the owner says so.
+name = "mom-app"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+[vars]
+# "production" hides dev helpers. Use "dev" ONLY on a laptop.
+MOM_MODE = "production"
+# Subdomain-ready: change here (or in the dashboard) and every e-mail link follows.
+APP_HOST = "mom-app-ew7.pages.dev"
+MAIL_DAILY_CAP = "20"
+# "1" blocks writes once the 14-day trial ends without a paid plan. Leave "0" until payments are live.
+ENFORCE_PLAN = "0"
+# Sign-in/share-code share of the daily mail budget, code requests per client address per hour, share link lifetime in days.
+CODE_DAILY_CAP = "12"
+AUTH_IP_PER_HOUR = "10"
+SHARE_TTL_DAYS = "30"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mom-db"
+database_id = "REPLACE_WITH_D1_ID_AFTER_wrangler_d1_create"
+migrations_dir = "migrations"
+
+# Secrets (set with `wrangler pages secret put NAME`, never commit):
+#   SESSION_SECRET, TOKEN_ENC_KEY, CF_EMAIL_TOKEN + CF_ACCOUNT_ID + MAIL_FROM (free Cloudflare Email, the default; or RESEND_API_KEY instead; one of the two is REQUIRED in production: without it nobody can sign in),
+#   GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, MS_CLIENT_ID, MS_CLIENT_SECRET,
+#   SUPPORT_EMAIL (optional: refund requests are mailed here), PAYEE_GSTIN (optional: printed on receipts once the owner supplies it)
+#   PAY_SERVICE_KEY (secret: this site's key for the central payment service of IT SERVICES BY RAJAT AGARWAL), PAY_SITE (this site's registered host in the central ledger, e.g. mom.veridian-aios.com), optional PAY_SERVICE_URL, PAY_LIVE_OK (exactly owner-approved before a live Razorpay key is accepted). No Razorpay key is ever kept here.
+# Custom domain: attach mom.veridian-aios.com to the Pages project in the Cloudflare dashboard.

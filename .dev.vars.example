@@ -1,0 +1,10 @@
+# Copy to .dev.vars for wrangler, or export for scripts/dev-server.ts. Never commit real values.
+MOM_MODE=dev
+SESSION_SECRET=change-me-long-random
+# In dev mode mail is only recorded in the in-app dev mailbox and the sign-in code is shown on screen.
+# Production REQUIRES a mail provider + MAIL_FROM (the app refuses to pretend a code was sent): the free Cloudflare Email Service
+# (CF_EMAIL_TOKEN + CF_ACCOUNT_ID, exactly 32 hex characters) or, as the older fallback, RESEND_API_KEY.
+# CF_EMAIL_TOKEN=
+# CF_ACCOUNT_ID=
+# RESEND_API_KEY=
+# MAIL_FROM=MOM <noreply@your-verified-domain>
