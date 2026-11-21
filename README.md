@@ -2,6 +2,8 @@
 
 # MOM v2 (Minutes of Meeting)
 
+Version history: see [CHANGELOG.md](CHANGELOG.md).
+
 Meetings become numbered action points with owners, statuses, history, sharing, a public chain log and PDF export.
 Built for Cloudflare Pages Functions + D1 (free tier). Planned home: `mom.veridian-aios.com`.
 

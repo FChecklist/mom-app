@@ -1,0 +1,14 @@
+{
+  "product": "MOM v2 (Minutes of Meeting)",
+  "version": "2.0.0",
+  "releasedAt": "2026-11-17T12:14:14Z",
+  "releasedAtIST": "2026-11-17 17:44:14 IST",
+  "commit": "2d3604b",
+  "changes": [
+    {
+      "version": "2.0.0",
+      "releasedAt": "2026-11-17T12:14:14Z",
+      "notes": "First versioned record of the existing app. MOM v2 as it stood in the public snapshot: meetings become numbered action points with owners, statuses, history, sharing, a public chain log, PDF export, team seats, plans with a 14-day trial, and payments through the central payment service. No behaviour change in this entry."
+    }
+  ]
+}
