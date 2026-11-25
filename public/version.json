@@ -1,10 +1,15 @@
 {
   "product": "MOM v2 (Minutes of Meeting)",
-  "version": "2.0.0",
-  "releasedAt": "2026-11-17T12:14:14Z",
-  "releasedAtIST": "2026-11-17 17:44:14 IST",
-  "commit": "2d3604b",
+  "version": "2.0.1",
+  "releasedAt": "2026-11-25T11:58:55Z",
+  "releasedAtIST": "2026-11-25 17:28:55 IST",
+  "commit": "a4cfe0b",
   "changes": [
+    {
+      "version": "2.0.1",
+      "releasedAt": "2026-11-25T11:58:55Z",
+      "notes": "Added the small dark-blue mark १३९ at the top centre of the page (6px, bold, thin dark red line, no layout shift, hidden from screen readers) plus a guard test. No other behaviour change."
+    },
     {
       "version": "2.0.0",
       "releasedAt": "2026-11-17T12:14:14Z",
