@@ -4,6 +4,10 @@ Newest first. Dates are in IST (Indian Standard Time, UTC+5:30).
 
 Every deployed change needs: a version bump (MAJOR.MINOR.PATCH), a new entry here, an updated `public/version.json`, and an updated Version section in `KNOWLEDGE.md`, all in the same pull request.
 
+## 2.0.1 - 2026-11-25 (IST)
+
+Owner order (approved 25 Nov 2026): the small mark "१३९" now sits at the very top centre of the page (`public/index.html`, styled once in `public/style.css`). It is 6px, bold, dark blue, with a thin dark red line under it; it is absolute-positioned so nothing moves, ignores clicks, and is hidden from screen readers and copy. A guard test (`tests/mark139.test.ts`) checks every page. No other behaviour, wording, price or payment change. Commit: the one that adds this entry (hash filled in when applied).
+
 ## 2.0.0 - 2026-11-17 (IST)
 
 First versioned record of the app as it already existed. The git history only has one snapshot commit (`2d3604b`, "Initial public snapshot (sanitized, no history)"), so earlier steps cannot be dated. `package.json` already said 2.0.0, so that is the version kept. Nothing about how the app behaves was changed by adding this record.

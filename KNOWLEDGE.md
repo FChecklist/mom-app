@@ -4,7 +4,7 @@ For what the app does, how to run it and how to deploy it, see `README.md`. For 
 
 ## Version
 
-- Current version: **2.0.0** (matches `package.json`).
+- Current version: **2.0.1** (matches `package.json`).
 - `version.json` lives at `public/version.json`. The build copies `public/` to `dist/`, so it is served at `/version.json`.
 - Version history in plain words: `CHANGELOG.md` (newest first, dates in IST).
 - How to bump: for every deployed change, in the same pull request:
